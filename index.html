@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skin/mod Download Verification</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    padding:15px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:#222;
+    border-radius:15px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 0 10px rgba(0,255,153,0.15);
+}
+
+.banner-ad{
+    text-align:center;
+    overflow:hidden;
+}
+
+.image-card img{
+    width:100%;
+    height:auto;
+    border-radius:12px;
+    display:block;
+}
+
+.title{
+    text-align:center;
+    font-size:24px;
+    color:#00ff99;
+    line-height:1.6;
+}
+
+.verify-box{
+    text-align:center;
+}
+
+.verify-box h3{
+    margin-bottom:15px;
+}
+
+input{
+    width:100%;
+    max-width:350px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.btn{
+    width:100%;
+    max-width:350px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    background:#00cc66;
+    color:white;
+}
+
+.btn:hover{
+    background:#00994d;
+}
+
+#getLinkBtn{
+    opacity:0.5;
+    cursor:not-allowed;
+}
+
+#getLinkBtn.active{
+    opacity:1;
+    cursor:pointer;
+}
+
+.video-box{
+    text-align:center;
+}
+
+.video-link{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 20px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+.status{
+    margin-top:10px;
+    color:#00ff99;
+    font-size:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Top Banner Ad -->
+
+<div class="card banner-ad">
+
+<script>
+  atOptions = {
+    'key' : 'b4163f90ac591880afe2eb689a0972a3',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/b4163f90ac591880afe2eb689a0972a3/invoke.js"></script>
+
+</div>
+
+<div class="card banner-ad">
+
+<script>
+  atOptions = {
+    'key' : '982d25242f808a29dc0129158f754c71',
+    'format' : 'iframe',
+    'height' : 600,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/982d25242f808a29dc0129158f754c71/invoke.js"></script>
+
+</div>
+
+<!-- Image -->
+
+<div class="card image-card">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZs1A8FOx5Ijl8tuQ3V1U9FFPeCI88x3TmENQCe0IbFR2QqiDZuNIljdxJ8T0k87zwfdV6zwVd4ggE8UyQpzXbgKQBf62aPuNf9zzwEiPjBv-fx3iU47IVH7qxXVqQHX7_ENmvhuqRO_7aEVeXCYuEwtKWX2z78266dYfZ8VyYumLexZlgp485ltcxTUc/s1672/file_00000000f05c71fa9d663c98f67302a5.png" alt="Thumbnail">
+
+</div>
+
+<!-- Title -->
+
+<div class="card">
+
+<h1 class="title">
+Hiace 4 NICA হাইয়েস ৪ এনআইসিএ । Bus Simulator Indonesia/India । BD BUS LOVER ATIK । 2026
+</h1>
+
+</div>
+
+<!-- Second Banner Ad -->
+
+<div class="card banner-ad">
+
+<script>
+  atOptions = {
+    'key' : '78a899b28bccd2a391a8ef98fe3e9ff1',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/78a899b28bccd2a391a8ef98fe3e9ff1/invoke.js"></script>
+
+
+</div>
+
+<!-- Verification Box -->
+
+<div class="card verify-box">
+
+<h3>
+ভিডিও দেখে Verification Code লিখুন
+</h3>
+
+<input
+type="text"
+id="codeInput"
+placeholder="Verification Code">
+
+<br>
+
+<button class="btn"
+onclick="checkCode()">
+Verify Code
+</button>
+
+<div class="status" id="status"></div>
+
+</div>
+
+<!-- Get Link -->
+
+<div class="card" style="text-align:center;">
+
+<button
+class="btn"
+id="getLinkBtn"
+disabled>
+
+Get Link
+
+</button>
+
+</div>
+
+<!-- Video Link -->
+
+<div class="card video-box">
+
+<h3>
+Verification Code পাওয়ার জন্য ভিডিও দেখুন
+</h3>
+
+<a
+class="video-link"
+href="https://youtu.be/HZ3sa0TrFIQ"
+target="_blank">
+
+Open YouTube Video
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+/* নিজের কোড এখানে দাও */
+
+const secretCode = "ATIK2026";
+
+function checkCode(){
+
+const userCode =
+document.getElementById("codeInput").value.trim();
+
+if(userCode === secretCode){
+
+document.getElementById("status").innerHTML =
+"✔ Verification Success";
+
+const btn =
+document.getElementById("getLinkBtn");
+
+btn.disabled = false;
+btn.classList.add("active");
+
+btn.onclick = function(){
+
+window.open(
+"https://www.mediafire.com/file/zqodavdnuutz0y5/Hiace_4_NICA.bussidmod/file",
+"_blank"
+);
+
+};
+
+}else{
+
+document.getElementById("status").innerHTML =
+"❌ Wrong Verification Code";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
